@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <a href="/">>> Voltar </a>
+    <br>
+    <h1 style="text-align: center;">Página de clientes</h1>
+
+    <!-- forEach dentro de TABELA -->
+     <h1>Meus pedidos</h1>
+    <hr>
+    <h4>Iniciando estudos com Node.js</h4>
+    <p>Essa pagina está sendo renderizada com EJS.</p>
+    <h4>Produtos:</h4>
+    <table border="1">
+        <tr>
+            <th width="120px">Nome:</th>
+            <th>CPF:</th>
+        </tr>
+        <% cliente.forEach(function(c){ %>
+        <tr>
+            <td><%= c.nome %></td>
+            <td><%= c.cpf %></td>
+        </tr>
+        <% }) %>
+    </table>
+
+</body>
+</html>
