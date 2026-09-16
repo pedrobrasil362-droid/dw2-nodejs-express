@@ -1,7 +1,7 @@
 // Importando o framework Express
 import express from "express";
 // router(); método do Express para criar rotas
-const rota = express.Router();
+const router = express.Router();
 
 // ROTA DE PRODUTOS
 rota.get("/produtos", (req, res) => {
@@ -20,4 +20,4 @@ rota.get("/produtos", (req, res) => {
   });
 });
 // Exportando o módulo
-export default rota;
+export default router;
